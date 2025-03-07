@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figma Land</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="figma/static/css/style.css" />
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <!-- Navbar -->
       <nav class="navbar">
         <ul class="navbar__menu">
@@ -18,13 +18,6 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <div class="navbar__right">
-          <a href="#"
-            ><img
-              src="figma/static/img/nav-social-right.png"
-              alt="socials logos in navbar"
-          /></a>
-        </div>
         <div class="navbar__center">
           <a href="#"
             ><img
@@ -32,25 +25,48 @@
               alt="Main logo in navbar"
           /></a>
         </div>
+        <div class="navbar__right">
+          <a href="#"
+            ><img
+              src="figma/static/img/nav-social-right.png"
+              alt="socials logos in navbar"
+          /></a>
+        </div>
       </nav>
+
+      <!-- block 1 -->
+      <section class="best">
+        <div class="best__main">
+          <div class="best__header">
+            <h1>
+              <img
+                src="figma/static/img/header-h1.png"
+                alt="The best products start with figma"
+              />
+            </h1>
+          </div>
+          <div class="best__text">
+            <p>
+              <img
+                src="figma/static/img/header-h4.png"
+                alt="Most calendars are designed for teams. slate is designed for freelancers"
+              />
+            </p>
+          </div>
+          <a href="#" class="button button--action">Try For Free</a>
+        </div>
+      </section>
     </header>
     <main>
-      <!-- block 1 -->
-      <section class="best-product">
-        <h1>The best products start with Figma</h1>
-        <p>
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
-        </p>
-        <a href="#" class="button button--action">Try For Free</a>
-      </section>
       <!-- Block2 - features -->
       <section class="features">
+        <div class="features__header">
         <h2>Features</h2>
         <p>
           Most calendars are designed for teams. Slate is designed for
           freelancers
         </p>
+      </div>
         <div class="features__points">
           <div class="features__points-item">
             <img src="figma/static/img/shapes-icon.png" alt="drawing icon" />
@@ -370,7 +386,10 @@
           <address>Mockingbird Hill Undefined</address>
         </div>
         <div class="footer__contact-phone">
-          <img src="figma/static/img/phone-icon.png" alt="Phone icon in footer" />
+          <img
+            src="figma/static/img/phone-icon.png"
+            alt="Phone icon in footer"
+          />
           (239)555-0108
         </div>
 
