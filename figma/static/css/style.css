@@ -440,6 +440,97 @@ font-weight: 700;
     gap: 8.45px;
     text-decoration: none;
 }
+.pricing{
+    background-color: #252b42;
+    padding: 0 28px;
+    gap: 10px;
+}
+.pricing__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    gap: 80px;
+}
+.pricing__header-pp{
+    display: none;
+}
+.pricing__header{
+    gap: 7px;
+    text-align: center;
+}
+.pricing__header h2,.pricing__header p{
+    color: white;
+    padding: 10px;
+    gap: 10px;
+}
+.pricing__offers{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 18px 0;
+    gap: 50px 0;
+}
+.pricing__offers-default, .pricing__offers-contrast{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 18px 0;
+    width: 100%;
+    gap:50px 0;
+    border: #DEDEDE 1px solid;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.pricing__offers-contrast{
+    background-color: #2091F9;
+    color: white;
+}
+.pricing__offers-contrast>.pricing__offers-button>a{
+    color: #2091f9;
+    background-color: #FFFFFF;
+}
+.pricing__header h2 {
+    display: flex;
+    padding: 3px 0;
+    gap: 10px 0;
+}
+.pricing__offers-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.pricing__offer-price-left h2{
+    font-size: 60px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+.pricing__offer-price-right{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+.pricing_offer-price{
+    font-weight: bold;
+}
+.pricing__list{
+    list-style: none;
+}
+.pricing__list li{
+    padding: 10px;
+    gap: 10px;
+}
+.pricing__offers-button{
+    padding: 18px 38px;
+    gap: 10px;
+}
 @media (min-width: 1000px) {
     .navbar{
         display: grid;
