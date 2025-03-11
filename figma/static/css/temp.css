@@ -1,19 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/graphik-trial');
-@import url('https://fonts.googleapis.com/css2?family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-:root {
-/*vars here*/
---main-text-color: white;
---menu-font-graphik: 'Graphik Trial', sans-serif;
---roboto-font: "Roboto", sans-serif;
-}
 *{
     margin: 0;
     padding: 0;

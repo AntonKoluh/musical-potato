@@ -1,0 +1,13 @@
+.best{
+    .best__main{
+        padding: 50px 0;
+        gap: 59px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 100%;
+        }
+    }
+}

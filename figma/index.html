@@ -2,500 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figma Land</title>
-    <link rel="stylesheet" href="../figma/static/css/style.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../figma/static/css/index.css" />
   </head>
 
   <body>
     <header class="header">
-      <!-- Navbar -->
-      <nav class="navbar">
-        <ul class="navbar__menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="navbar__center">
-          <a href="#"
-            ><img
-              src="../figma/static/img/nav-center-logo.png"
-              alt="Main logo in navbar"
-          /></a>
-        </div>
-        <div class="navbar__right">
-          <a href="#"
-            ><img
-              src="../figma/static/img/nav-social-right.png"
-              alt="socials logos in navbar"
-          /></a>
-        </div>
-        <div class="navbar__burger">
-          <a href="#"><img src="../figma/static/img/burger-menu.png" alt="" /></a>
-        </div>
-      </nav>
-
-      <!-- block 1 -->
-      <section class="best">
-        <div class="best__main">
-          <div class="best__header">
-            <h1>
-              <img
-                src="../figma/static/img/header-h1.png"
-                alt="The best products start with figma"
-              />
-            </h1>
-          </div>
-          <div class="best__text">
-            <p>
-              <img
-                src="../figma/static/img/header-h4.png"
-                alt="Most calendars are designed for teams. slate is designed for freelancers"
-              />
-            </p>
-          </div>
-          <a href="#" class="button button--action">Try For Free</a>
-        </div>
-      </section>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="../figma/html/global.header-nav.partial.html"
+      ></nav>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="../figma/html/index.header-hero.partial.html"
+      ></div>
     </header>
     <main>
-      <!-- Block2 - features -->
-      <section class="features">
-        <div class="features__header">
-          <h2>Features</h2>
-          <p>
-            Most calendars are designed for teams. Slate is designed for
-            freelancers
-          </p>
-        </div>
-        <div class="features__points">
-          <div class="features__points-item">
-            <img src="../figma/static/img/shapes-icon.png" alt="drawing icon" />
-            <h3>OpenType features Variable fonts</h3>
-            <p>
-              Slate helps you see how many more days you need to work to reach
-              your financial goal
-            </p>
-          </div>
-          <div class="features__points-item">
-            <img src="../figma/static/img/draw-icon.png" alt="draw icon" />
-            <h3>Design with real data</h3>
-            <p>
-              Slate helps you see how many more days you need to work to reach
-              your financial goal
-            </p>
-          </div>
-          <div class="features__points-item">
-            <img src="../figma/static/img/brush-icon.png" alt="brush icon" />
-            <h3>Fastest way to take action</h3>
-            <p>
-              Slate helps you see how many more days you need to work to reach
-              your financial goal
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- block 3: embedded video -->
-      <div class="video">
-        <img src="../figma/static/img/video-screen.png" alt="Standin for video" />
-      </div>
-      <!-- block 4: organize -->
-      <section class="organize">
-        <div class="organize__container">
-          <div class="organize__text">
-            <div class="organize__text-header">
-              <h3>Fastest way to organize</h3>
-            </div>
-            <div class="organize__text-p">
-              <p>
-                Most calendars are designed for teams. Slate is designed for
-                freelancers
-              </p>
-            </div>
-            <div class="button__container">
-              <a href="#" class="button button--action">Try For Free</a>
-            </div>
-          </div>
-
-          <div class="organize__img">
-            <img src="../figma/static/img/laptop-large.png" alt="large laptop" />
-          </div>
-        </div>
-      </section>
-      <!-- Block 5: prototyping -->
-      <section class="prototyping">
-        <div class="prototyping__inner">
-          <div class="prototyping__img">
-            <img src="../figma/static/img/newsletter-large.png" alt="" />
-          </div>
-          <div class="prototyping__main">
-            <div class="prototyping__text">
-              <p class="prototyping__text-bold">At your fingertips</p>
-              <h2 class="prototyping__text-mheader">Newsletter</h2>
-              <h2 class="prototyping__text-pheader">
-                Lightning fast prototyping
-              </h2>
-              <p class="prototyping__text-mp">
-                Most calendars are designed for teams. Slate is designed for
-                freelancers
-              </p>
-            </div>
-            <div class="prototyping__form">
-              <p class="prototyping__form-header">
-                Subscribe to our Newsletter
-              </p>
-
-              <div class="prototyping__form-p">
-                <p>Available exclusivery on Figmaland</p>
-              </div>
-              <div class="prototyping__form-main">
-                <form action="">
-                  <label for="email">Yours Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id=""
-                    placeholder="Your Email"
-                  />
-                  <input type="submit" value="Subscribe" />
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Block 6: partners -->
-      <section class="partners">
-        <div class="partners__inner">
-          <div class="partners__text">
-            <h2>Partners</h2>
-            <p>
-              Most calendars are designed for teams. Slate is designed for
-              freelancers
-            </p>
-          </div>
-          <div class="partners__clients">
-            <div class="partners__clients-client">
-              <h6>Client Name</h6>
-              <img
-                src="../figma/static/img/logos-google.png"
-                alt="google logo in clients section"
-              />
-            </div>
-            <div class="partners__clients-client">
-              <h6>Client Name</h6>
-              <img
-                src="../figma/static/img/logos-amazon.png"
-                alt="amazon logo in clients section"
-              />
-            </div>
-            <div class="partners__clients-client">
-              <h6>Client Name</h6>
-              <img
-                src="../figma/static/img/logos-micro.png"
-                alt="microsoft logo in clients section"
-              />
-            </div>
-            <div class="partners__clients-client">
-              <h6>Client Name</h6>
-              <img
-                src="../figma/static/img/logos-uber.png"
-                alt="uber logo in clients section"
-              />
-            </div>
-            <div class="partners__clients-client">
-              <h6>Client Name</h6>
-              <img
-                src="../figma/static/img/logos-google.png"
-                alt="google logo in clients section"
-              />
-            </div>
-            <div class="partners__clients-client">
-              <h6>Client Name</h6>
-              <img
-                src="../figma/static/img/logos-google.png"
-                alt="google logo in clients section"
-              />
-            </div>
-            <div class="partners__clients-client">
-              <h6>Client Name</h6>
-              <img
-                src="../figma/static/img/logos-uber.png"
-                alt="uber logo in clients section"
-              />
-            </div>
-            <div class="partners__clients-client">
-              <h6>Client Name</h6>
-              <img
-                src="../figma/static/img/logos-amazon.png"
-                alt="amazon logo in clients section"
-              />
-            </div>
-          </div>
-          <a href="#" class="button button--action">Try For Free</a>
-        </div>
-      </section>
-      <!-- Block 7: Testimonials -->
-      <section class="testimonials">
-        <div class="testimonials__inner">
-          <div class="testimonials__header">
-            <h2>Testimonials</h2>
-            <p>Most calendars are designed for teams.</p>
-          </div>
-          <div class="testimonials__main">
-            <div class="testimonials__img">
-              <img src="../figma/static/img/logos-ibm.png" alt="IBM logo" />
-            </div>
-            <div class="testimonials__p">
-              <p>
-                Most calendars are designed for teams. Slate is designed for
-                freelancers who want a simple way to plan their schedule.
-              </p>
-            </div>
-            <div class="testimonials__client">
-              <div class="testimonials__client-img">
-                <img
-                  src="../figma/static/img/client-avatar.png"
-                  alt="Testimony client avatar"
-                />
-              </div>
-              <div class="testimonials__client-text">
-                <h6>Organize across</h6>
-                <a href="#">Ui designer</a>
-              </div>
-            </div>
-          </div>
-          <div class="testimonials__button">
-            <a href="#" class="button button--action">More Testimonials</a>
-          </div>
-        </div>
-      </section>
-      <!-- Block 8: pricing -->
-      <section class="pricing">
-        <div class="pricing__inner">
-          <div class="pricing__header">
-            <h2>Pricing</h2>
-            <p>Most calendars are designed for teams.</p>
-            <p class="pricing__header-pp">Slate is designed for freelancers</p>
-          </div>
-          <div class="pricing__offers">
-            <div class="pricing__offers-default">
-              <div class="pricing_offers-header">
-                <h3>FREE</h3>
-                <p>Organize across all apps by hand</p>
-              </div>
-              <div class="pricing__offers-price">
-                <div class="pricing__offer-price-left">
-                  <h2>0</h2>
-                </div>
-                <div class="pricing__offer-price-right">
-                  <p class="pricing_offer-price">$</p>
-                  <p>Per Month</p>
-                </div>
-              </div>
-              <ul class = "pricing__list">
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-              </ul>
-              <div class="pricing__offers-button">
-                <a href="#" class="button button--action">Order Now</a>
-              </div>
-            </div>
-
-            <div class="pricing__offers-contrast">
-              <div class="pricing__offers-header">
-                <h3>SANDARD</h3>
-                <p>Organize across all apps by hand</p>
-              </div>
-              <div class="pricing__offers-price">
-                <div class="pricing__offer-price-left">
-                  <h2>10</h2>
-                </div>
-                <div class="pricing__offer-price-right">
-                  <p class="pricing_offer-price">$</p>
-                  <p>Per Month</p>
-                </div>
-              </div>
-              <ul>
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-              </ul>
-              <div class="pricing__offers-button">
-                <a href="#" class="button button--action">Order Now</a>
-              </div>
-            </div>
-            <div class="pricing__offers-default">
-              <div class="pricing__offers-header">
-                <h3>BUSINESS</h3>
-                <p>Organize across all apps by hand</p>
-              </div>
-              <div class="pricing__offers-price">
-                <div class="pricing__offer-price-left">
-                  <h2>99</h2>
-                </div>
-                <div class="pricing__offer-price-right">
-                  <p class="pricing_offer-price">$</p>
-                  <p>Per Month</p>
-                </div>
-              </div>
-              <ul  class = "pricing__list">
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-                <li>Pricing Feature</li>
-              </ul>
-              <div class="pricing_offers-header">
-                <a href="#" class="button button--action">Order Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- block 9: Contact Us -->
-
-      <section class="contact">
-        <div class="contact__text">
-          <h2>Contact Us</h2>
-          <p>
-            Most calendars are designed for teams. Slate is designed for
-            freelancers
-          </p>
-        </div>
-
-        <div class="contact__left">
-          <h3>Contact Us</h3>
-          <form class="contact__left-form">
-            <label for="name">Your Name</label>
-            <input name="name" type="text" placeholder="Your Name" />
-            <label for="email">Your Email</label>
-            <input name="email" type="text" placeholder="Your Email" />
-            <label for="message">Your Message</label>
-            <textarea name="message" placeholder="Your Message"></textarea>
-
-            <div class="button__wrapper">
-              <button type="button">Send</button>
-            </div>
-          </form>
-        </div>
-
-        <div class="contact__right">
-          <div class="contact__right-address">
-            <img
-              src="../figma/static/img/map-icon.png"
-              alt="Location icon in right contact"
-            />
-            <address>
-              6386 Spring St Undefined Anchorage, Georgia 12473 United States
-            </address>
-          </div>
-          <div class="contact__right-phone">
-            <img
-              src="../figma/static/img/phone-icon.png"
-              alt="Phone icon in right contact"
-            />
-            (843)555-0130
-          </div>
-          <div class="contact__right-mail">
-            <img
-              src="../figma/static/img/email-icon.png"
-              alt="Email icon in right contact"
-            />
-            willie.jennings@example.com
-          </div>
-          <div class="contact__right-img">
-            <img
-              src="../figma/static/img/map-screen.png"
-              alt="Map location (image) in right contact"
-            />
-          </div>
-          <div class="contact__right-social">
-            <img
-              src="../figma/static/img/twitter-icon-blue.png"
-              alt="Twitter icon in right contact"
-            />
-            <img
-              src="../figma/static/img/fb-icon-blue.png"
-              alt="Facebook icon in right contact"
-            />
-            <img
-              src="../figma/static/img/linkdin-icon-blue.png"
-              alt="Linkedin icon in right contact"
-            />
-          </div>
-        </div>
-      </section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="../figma/html/index.features.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="../figma/html/index.organize.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="../figma/html/index.newsletter.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="../figma/html/index.partners.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="../figma/html/index.testimonials.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="../figma/html/index.pricing.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="../figma/html/index.contact.partial.html"
+      ></section>
     </main>
-    <footer>
-      <div class="footer__menu">
-        <div class="footer__menu-row">
-          <h3>Pages</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__menu-row">
-          <h3>Tomothy</h3>
-          <ul>
-            <li><a href="#">Elenore Edwards</a></li>
-            <li><a href="#">Ted Robertson</a></li>
-            <li><a href="#">Annette Russell</a></li>
-            <li><a href="#">Jennie Mckinney</a></li>
-            <li><a href="#">Gloria Richards</a></li>
-          </ul>
-        </div>
-        <div class="footer__menu-row">
-          <h3>Jane Black</h3>
-          <ul>
-            <li><a href="#">Phillip Jones</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Coileen Russell</a></li>
-            <li><a href="#">Marvin Hawkins</a></li>
-            <li><a href="#">Bruce Simmons</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__contact">
-        <div class="footer__contact-address">
-          <img src="../figma/static/img/map-icon.png" alt="Map Icon in footer" />
-          <address>Mockingbird Hill Undefined</address>
-        </div>
-        <div class="footer__contact-phone">
-          <img
-            src="../figma/static/img/phone-icon.png"
-            alt="Phone icon in footer"
-          />
-          (239)555-0108
-        </div>
-
-        <div class="footer__contact-social">
-          <img
-            src="../figma/static/img/twitter-icon-blue.png"
-            alt="Twitter Icon in footer"
-          />
-          <img
-            src="../figma/static/img/fb-icon-blue.png"
-            alt="Facebook icon in footer"
-          />
-          <img
-            src="../figma/static/img/linkdin-icon-blue.png"
-            alt="Linkedin icon in footer"
-          />
-        </div>
-      </div>
-    </footer>
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="../figma/html/global.footer.partial.html"
+    ></footer>
   </body>
 </html>
