@@ -1,0 +1,103 @@
+.footer {
+  background-color: var(--pricing-background-color);
+  padding: 107px 0;
+  @media (min-width: 800px) {
+    padding: 150px 0;
+  }
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 78px;
+    @media (min-width: 800px) {
+      gap: 125px;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .footer__menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 73px;
+      @media (min-width: 800px) {
+        gap: 73px;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      .footer__menu-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        h3 {
+          padding: 10px 0;
+          font-weight: 700;
+          font-size: 1.25rem;
+          line-height: 28px;
+          letter-spacing: 0.1px;
+          text-align: center;
+          color: #fff;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 16px;
+          @media (min-width: 800px) {
+            gap: 26px;
+            align-items: flex-start;
+          }
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .footer__contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 10px;
+      .footer__contact-address,
+      .footer__contact-phone {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: #fff;
+        address {
+          padding: 10px;
+          font-style: normal;
+        }
+        p {
+          padding: 7px;
+        }
+      }
+      .footer__contact-social {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      & > :last-child {
+        flex: 1;
+        align-self: center;
+        justify-self: space-between;
+        @media (min-width: 800px) {
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+}
