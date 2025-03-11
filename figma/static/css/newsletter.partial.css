@@ -58,6 +58,7 @@
       letter-spacing: 0.2px;
       @media (min-width: 700px) {
         padding: 10px 0;
+        display: none;
       }
     }
     .newsletter__text-pheader {
