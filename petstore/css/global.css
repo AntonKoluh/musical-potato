@@ -1,0 +1,53 @@
+@import url("https://fonts.cdnfonts.com/css/graphik-trial");
+@import url("https://fonts.googleapis.com/css2?family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*vars here*/
+  --main-text-color: white;
+  --primary-button-color: #2091F9;
+  --main-font: "Graphik Trial", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --pricing-background-color: #252B42;
+  --pricing-contrast-color: #2091F9;
+  font-family: var(--main-font);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header{
+  background-image: url("../img/background-header.png");
+  width: 100%;
+  min-height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (min-width: 1000px){
+    min-height: 927px;
+  }
+}
+
+.button{
+  background-color: var(--primary-button-color);
+  border: solid 0px black;
+  border-radius: 35px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 13px 48px;
+  &:hover{
+    background-color: #fff;
+    color: #000;
+  }
+}

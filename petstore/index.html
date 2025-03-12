@@ -12,16 +12,20 @@
     ></script>
   </head>
   <body>
-    <header
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.header.partial.html"
-    ></header>
-    <nav
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="global.nav.partial.html"
-    ></nav>
+    <header>
+      <div
+        class="header-hours"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header.partial.html"
+      ></div>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.nav.partial.html"
+      ></nav>
+    </header>
+
     <main>
       <section
         data-hx-trigger="load"
@@ -60,9 +64,9 @@
       ></section>
     </main>
     <footer
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.main-footer.partial.html"
-      ></footer>
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.main-footer.partial.html"
+    ></footer>
   </body>
 </html>
