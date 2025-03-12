@@ -2,6 +2,7 @@
 @import "index.header.partial.css";
 @import "global.nav.partial.css";
 @import "index.main-landing.partial.css";
+@import "index.main-cards.partial.css";
 @import "index.main-products.partial.css";
 @import "index.main-about.partial.css";
 @import "index.main-trending.partial.css";
