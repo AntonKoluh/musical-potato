@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pets R Us</title>
-    <link rel="icon" type="image/x-icon" href="img/fav-icon.png" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../petstore/css/index.css">
   </head>
   <body>
     <header>
@@ -17,12 +18,12 @@
         class="header-hours"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.header.partial.html"
+        data-hx-get="../petstore/index.header.partial.html"
       ></div>
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.nav.partial.html"
+        data-hx-get="../petstore/global.nav.partial.html"
       ></nav>
     </header>
 
@@ -30,43 +31,43 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.main-landing.partial.html"
+        data-hx-get="../petstore/index.main-landing.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.main-products.partial.html"
+        data-hx-get="../petstore/index.main-products.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.main-about.partial.html"
+        data-hx-get="../petstore/index.main-about.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.main-trending.partial.html"
+        data-hx-get="../petstore/index.main-trending.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.main-promotion.partial.html"
+        data-hx-get="../petstore/index.main-promotion.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.main-shop.partial.html"
+        data-hx-get="../petstore/index.main-shop.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.main-cataloge.partial.html"
+        data-hx-get="../petstore/index.main-cataloge.partial.html"
       ></section>
     </main>
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
-      data-hx-get="global.main-footer.partial.html"
+      data-hx-get="../petstore/global.main-footer.partial.html"
     ></footer>
   </body>
 </html>

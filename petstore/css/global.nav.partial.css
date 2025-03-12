@@ -1,0 +1,103 @@
+.navbar {
+  background-color: var(--main-bg-color);
+  .navbar__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 24px;
+    @media (min-width: 900px) {
+      padding: 30px 40px;
+    }
+    .navbar__logo {
+      img {
+        max-width: 100%;
+        max-height: 34px;
+      }
+    }
+    .navbar__links {
+      display: none;
+      @media (min-width: 900px) {
+        display: block;
+        ul {
+          li {
+            text-align: center;
+            width: 100%;
+          }
+          list-style: none;
+          display: grid;
+          gap: 10px;
+          grid-template-columns: repeat(5, 1fr);
+          a {
+            font-weight: bold;
+            font-size: 0.937rem;
+            font-family: var(--header-font);
+            color: var(--main-text-color);
+            text-decoration: none;
+            &:hover {
+              color: var(--header-text-color);
+              text-decoration: none;
+              background-image: linear-gradient(#3c3731, #3c3731);
+              background-size: 0% 2px;
+              background-position: left bottom;
+              background-repeat: no-repeat;
+              padding-bottom: 3px;
+              animation: underline 0.4s forwards;
+            }
+          }
+        }
+      }
+    }
+    .navbar__social {
+      display: none;
+      @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        gap: 15px;
+        svg {
+          height: 30px;
+          width: 30px;
+          fill: var(--accent-color);
+          &:hover {
+            fill: #32a1a7;
+          }
+        }
+      }
+    }
+    .navbar__burger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      @media (min-width: 900px) {
+        display: none;
+      }
+      .w-burger__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        .w-burger__line {
+          display: block;
+          width: 100%;
+          height: 4px;
+          background-color: black;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes underline {
+  from {
+    background-size: 0% 2px;
+  }
+  to {
+    background-size: 100% 2px;
+  }
+}

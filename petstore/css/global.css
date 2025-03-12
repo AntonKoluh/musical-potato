@@ -1,5 +1,5 @@
-@import url("https://fonts.cdnfonts.com/css/graphik-trial");
-@import url("https://fonts.googleapis.com/css2?family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 *,
 *::after,
 *::before {
@@ -7,17 +7,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
-  /*vars here*/
-  --main-text-color: white;
-  --primary-button-color: #2091F9;
-  --main-font: "Graphik Trial", sans-serif;
-  --secondary-font: "Roboto", sans-serif;
-  --pricing-background-color: #252B42;
-  --pricing-contrast-color: #2091F9;
-  font-family: var(--main-font);
+  --header-text-color: #ed6435;
+  --header-bg-color: #fee8e4;
+  --header-font: "PT Sans", sans-serif;
+  --main-bg-color: #faf4f2;
+  --main-text-color: #6b6b6b;
+  --accent-color: #45c1c7;
+  --landing-header-font: "Baloo 2", sans-serif;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -27,27 +26,73 @@ img {
   margin: auto;
 }
 
-.header{
-  background-image: url("../img/background-header.png");
-  width: 100%;
-  min-height: 900px;
-  background-position: center;
-  background-repeat: no-repeat;
-  @media (min-width: 1000px){
-    min-height: 927px;
+.button--orange {
+  display: flex;
+  a {
+    color: #ed6435;
+    background-color: #ffe6d4;
+    border: transparent solid 1px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: var(--header-font);
+    padding: 13px 28px;
+    margin: 0px;
+    &:hover {
+      animation: button-color-anim-orange 0.7s forwards;
+    }
   }
 }
 
-.button{
-  background-color: var(--primary-button-color);
-  border: solid 0px black;
-  border-radius: 35px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  padding: 13px 48px;
-  &:hover{
-    background-color: #fff;
-    color: #000;
+.button--empty {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 28px;
+  margin: 0px;
+  gap: 10px;
+  border: solid 1px #45c1c7;
+  border-radius: 25px;
+  &:hover {
+    animation: button-color-anim-empty 0.7s forwards;
+    svg {
+      color: #fff;
+    }
+    a {
+      color: #fff;
+    }
+  }
+  svg {
+    color: #45c1c7;
+    height: 24px;
+    width: 24px;
+  }
+  a {
+    color: #45c1c7;
+    font-family: var(--header-font);
+    font-size: 1rem;
+    text-decoration: none;
+  }
+}
+@keyframes button-color-anim-orange {
+  from {
+    background-color: #ffe6d4;
+    color: #ed6435;
+  }
+  to {
+    background-color: #b2e7e9;
+    color: #45c1c7;
+  }
+}
+
+@keyframes button-color-anim-empty {
+  from {
+    border-color: #45c1c7;
+  }
+  to {
+    border-color: transparent;
+    background-color: #45c1c7;
   }
 }
