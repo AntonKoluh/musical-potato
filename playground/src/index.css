@@ -8,9 +8,14 @@
 
 
 :root {
+  --main-text-color: #3c3731;
   --header-hours-bg: #f2e8e4;
   --header-hours-text-folor: #ed6435;
+  --btn-orange-accentcolor: #ffe6d4;
+  --btn-orange-hover-bg: #b2e7e9;
+  --btn-orange-hover-text: #45c1c7;
   --header-hours-font: "PT Sans", sans-serif;
+  --secondary-font: "Baloo 2", sans-serif;
   --primary-accent-color: #45c1c7;
   --secondary-accent-color: #32a1a7;
   --main-bg-color: #faf4f2;
@@ -127,5 +132,60 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .btn{
+    border: 0px black solid;
+    border-radius: 25px;
+    font-weight: bold;
+    width: 100%;
+    a {
+      border-radius: 25px;
+      padding: 16px 28px;
+      font-size: 16.5px;
+    }
+  }
+
+  .btn--orange{
+    color: var(--header-hours-text-folor);
+    a{
+      background-color: var(--btn-orange-accentcolor);
+      border-radius: 25px;
+      padding: 16px 28px;
+      font-size: 16.5px;
+      font-family: var(--header-hours-font);
+      &:hover{
+        background-color: var(--btn-orange-hover-bg);
+        color: var(--btn-orange-hover-text)
+    }
+    }
+  }
+  .btn--empty{
+    color: var(--btn-orange-hover-text);
+    display: inline-flex; 
+    width: 50;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    background-color: transparent;
+    border-color: var(--btn-orange-accentcolor);
+    border-width: 1px;
+    border-radius: 25px;
+    font-size: 16.5px;
+    padding: 16px 28px;
+    font-family: var(--header-hours-font);
+    svg{
+      width: 24px;
+    }
+    a{
+      padding: 0;
+    }
+    &:hover{
+      background-color: var(--btn-orange-hover-text);
+      color: #fff;
+    }
   }
 }
