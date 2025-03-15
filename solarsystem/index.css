@@ -1,0 +1,59 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.system {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    transform-origin: center;
+    animation: solar-rotation 10s linear infinite;
+}
+
+.sun {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    animation: sun-motion 10s linear infinite;
+    img{
+        width: 100px;
+        height: 100px;
+    }
+  }
+
+.mercury {
+    position: absolute;
+    animation: mercury-motion 10s linear infinite;
+    img{
+        width: 5.7px;
+        height: 5.7px;
+    }
+}
+
+.earth{
+    img{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+
+@keyframes sun-motion {
+    0%   { transform: rotate(0deg)}
+    25%  { transform: rotate(90deg)}
+    50%  { transform: rotate(180deg)}
+    75%  { transform: rotate(270deg)}
+    100% { transform: rotate(360deg)}
+  }
+
+  @keyframes mercury-motion {
+    0%   { transform: rotate(0deg) translateX(90px) }
+    25%  { transform: rotate(90deg) translateX(90px) }
+    50%  { transform: rotate(180deg) translateX(90px); }
+    75%  { transform: rotate(270deg) translateX(90px) }
+    100% { transform: rotate(360deg) translateX(90px) }
+  }
