@@ -5,6 +5,7 @@ import HeaderHours from './index/headhours.tsx'
 import NavBar from './index/navbar.tsx'
 import MainLanding from './index/mainLanding.tsx'
 import Cards from './index/cards.tsx'
+import Products from './index/producs.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')!).render(
     <NavBar />
     <MainLanding />
     <Cards />
+    <Products />
     </div>
   </StrictMode>,
 )
