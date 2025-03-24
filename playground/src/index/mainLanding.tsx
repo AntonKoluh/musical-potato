@@ -4,7 +4,7 @@ function MainLanding() {
       <div className="pt-[110px] pb-[150px] text-(--main-text-color) gap-[60px] flex flex-col justify-start px-[24px]">
         <h1 className ="text-5xl font-(family-name:--secondary-font) font-cursive font-bold md:text-[70px] lg:text-[82px]">Everything Your Pet Needs</h1>
         <p className="text-[19px] font-(family-name:--header-hours-font)">Pet supplies, foodm and products from the best manufacturers</p>
-        <div className="flex flex-col w-41 gap-[30px] justify-center items-center sm:flex-row sm:gap-[15px] sm:w-100 sm:justify-center sm:items-center">
+        <div className="flex flex-col gap-[30px] justify-center items-center sm:flex-row sm:gap-[15px] sm:w-100 sm:justify-center sm:items-center">
           <div className="btn btn--orange">
             <a href="#about">About Us</a>
           </div>

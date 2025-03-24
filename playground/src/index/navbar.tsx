@@ -1,6 +1,6 @@
 function NavBar() {
   return (
-    <nav className="bg-(--main-bg-color)">
+    <nav className="bg-(--main-bg-color) w-full">
       <div className="max-w-7xl px-[24px] py-[30px] flex flex-row justify-between items-center lg:py-[15px]">
         <div className="">
           <img
